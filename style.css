@@ -1,0 +1,46 @@
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.proyectos {
+    background-color: black;
+}
+
+div.nav {
+    color: brown;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+a.link {
+    text-decoration: none;
+    color: white;
+}
+
+div.footer {
+    background-color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 30vh;
+    min-height: 250px;
+    max-height: 500px;
+}

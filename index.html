@@ -26,11 +26,12 @@
             margin-top: 20px;
             margin-bottom: 20px;
             padding: 30px;
+            color: white;
         }
         .container {
             width: 80%;
             margin: 0 auto;
-            max-width: 800px;
+            /* max-width: 800px; */
             padding: 30px 0;
         }
         img#personal_img {
@@ -42,6 +43,7 @@
         p {
             font-weight: 100;
             font-size: 30px;
+            color: white;
         }
         .hero-bg {
             background-image: url("personal.jpg");
@@ -51,6 +53,33 @@
         .hero {
             width: 70%;
         }
+        .proyecto {
+            height: 50px;
+            width: 20%;
+            background-color: hotpink;
+            margin-bottom: 5px;
+            display: flex;
+        }
+        .container-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: flex-end; */
+            align-items: stretch;
+
+        }
+
+        .flex-item {
+            height: 100px;
+            background-color: indianred;
+            flex-basis: 40%;
+            border: indigo solid 1px;
+        }
+
+        .impar {
+            height: 130px;
+        }
+       
     </style>
     <link rel="stylesheet" href="style.css">
 
@@ -65,7 +94,7 @@
         </div>
     </div>
     <div class="hero-bg">
-        <div class="container">
+        <div class="container" style="color: grey;">
             <div class="hero">
                 <h1>Juan Perez</h1>
                 <h2>Desarrollador y diseñador</h2>
@@ -74,14 +103,16 @@
         </div>
     </div> 
     <div class="container">
-        <div class="proyectos">
-            <h3>Mis proyectos</h3>
-            <ul>
-                <li>Carniceria Don Diego</li>
-                <li>Supermercado Mercadino</li>
-                <li>Heladeria Mexicana</li>
-                <li>Desayunador</li>
-            </ul>
+        <div class="container-flex">
+            <div class="flex-item impar">a</div>
+            <div class="flex-item" style="flex-shrink: ">b</div>
+            <div class="flex-item impar">c</div>
+            <div class="flex-item" style="order: 2">d</div>  
+            <div class="flex-item impar">e</div>  
+            <div class="flex-item">f</div>  
+            <div class="flex-item impar">g</div>
+            <div class="flex-item">h</div>  
+            <div class="flex-item impar">i</div>    
         </div>
         <div>
             <iframe
